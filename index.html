@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PomoTimer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/app.js" defer></script>
+</head>
+<body>
+    <main class="main">
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="right-bar-tasks">
+            <div class="right-bar-tasks-title">
+                <h2>Tasks</h2>
+            </div>
+            <div class="right-bar-task-tasks-content">
+                <div class="right-bar-tasks-add">
+                    <input type="text" required>
+                    <button>Add</button>
+                </div>
+                <div class="right-bar-tasks-js-add">
+                    <div class="task">
+                        <p>hola</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pomotimer-section">
+            <div class="container">
+                <h1>Pomodoro</h1>
+
+                <div class="panel">
+                    <p id="work">work</p>
+                    <p id="break">break</p>
+                </div>
+
+                <div class="timer">
+                    <div class="timer-circle">
+                        <div class="time">
+                            <p id="minutes">25</p>
+                            <p>:</p>
+                            <p id="seconds">00</p>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="controls">
+                    <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
+
+                    <a id="reset" href="/"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+</body>
+</html>
