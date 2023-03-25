@@ -13,6 +13,12 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    color: var(--color-font);
+}
+
+main {
+    position: relative;
+    overflow-x: hidden;
 }
 
 html, body, main {
@@ -30,6 +36,64 @@ i {
 
 h1 {
     font-size: 3.2rem;
+}
+
+.right-bar-tasks {
+    height: 100%;
+    background: var(--color-primary);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    -webkit-box-shadow: 0px 0px 15px 10px var(--color-shadow); 
+    box-shadow: 0px 0px 15px 10px var(--color-shadow);
+    transform: translateX(100%);
+}
+
+.right-bar-task-tasks-content .right-bar-tasks-add {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-bar-task-tasks-content .right-bar-tasks-add button {
+    width: 25%;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.right-bar-tasks-js-add {
+    margin-top: 20px;
+}
+
+.right-bar-task-tasks-content .right-bar-tasks-add input {
+    border: 1px solid #000;
+    border-radius: 20px;
+    height: 2em;
+    padding: 10px;
+    color: #000;
+    width: 70%;
+}
+
+.right-bar-task-tasks-content .right-bar-tasks-add input:focus {
+    outline: none;
+}
+
+.menu-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    rotate: 90deg;
 }
 
 .pomotimer-section {
@@ -63,6 +127,7 @@ h1 {
 .panel p {
     opacity: .8;
     transition: color 1s ease-in;
+    font-size: 25px;
 }
 
 .panel p.active {
@@ -124,4 +189,13 @@ h1 {
 .controls button {
     border: none;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.controls button:active {
+    transform: scale(0.9);
+}
+
+.controls #reset {
+    display: none;
 }
